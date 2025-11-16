@@ -1,0 +1,94 @@
+
+#Category: Players
+[PLAYERS]
+	#(Default: 1 | 2 → 200%)
+	#Multiplies the Dying Light event's duration if you're already transfurred after spawning or respawning.
+	#Recommended to increase it with testbodyOnceOnly enabled and changed:keepForm disabled.
+	dyinglightInnateDurationMultiplier = 1.0
+	#(Default: ["changed:form_white_latex_wolf/male","changed:form_white_latex_wolf/female"])
+	#(Please use /transfur command to view the variant list.)
+	#What form will players transfur into in the Test Body event?
+	testbodyVariant = ["changed:form_white_latex_wolf/male", "changed:form_white_latex_wolf/female"]
+	#(Default: false)
+	#Should the Test Body event occur once only?
+	testbodyOnceOnly = false
+	#(Default: false)
+	#When the Test Body event occurs, should the event always replace your variant after respawning?
+	testbodyPersistent = false
+	#(Default: 3 | The default value of Transfur Tolerance: 20)
+	#Overwrites the players' transfur tolerance attribute if enabled with changedContagion.
+	contagionPlayerTolerance = 3.0
+
+#Category: Mobs
+[MOBS]
+	#(Default: true)
+	#AI latexes who have the Pacified effect always stay neutral, even if changedDoomsday is enabled. Does not work for armed latexes.
+	doomsdayTruePacifiedLatexes = true
+	#(Default: 0 | The default value of Transfur Tolerance: 20)
+	#Overwrites the mobs' transfur tolerance attribute if enabled with changedContagion.
+	contagionMobTolerance = 0.0
+	#(Default: false)
+	#It will disable classes that give Non-minibosses potion effects and attribute changes.
+	armamentraceNoClasses = false
+	#(Default: -1 | 0.05 → 5%)
+	#Adjusts the spawn chance of Minibosses. Setting it to not below 0 will override the original set spawn chance.
+	armamentraceMinibossSpawnChance = -1.0
+	#(Default: 1.5 | 1.5 → 150%)
+	#Multiplies all armed latexes' transfur damage.
+	armamentraceTransfurDamageMultiplier = 1.5
+
+#Category: Miscellaneous (Configuration Only)
+[MISCELLANEOUS]
+	#(Default: true)
+	#Applies the Pacified effect to all tamed latexes (if you're not a latex or (requires Hero of the Village to be enabled)you have a high reputation).
+	#⚠Warning⚠: On 2.6.6, tamed latexes with the Pacified effect still can be targeted by iron golems. Let your partners stay away from iron golems as much as possible!
+	TamedLatexesAreFriends = true
+	#(Default: 0 | 2 → Regeneration II. Range: 0-5)
+	#Applies the Regeneration X effect to all tamed latexes. The effect level is equal to the value you inserted below.
+	TamedLatexesRegeneration = 0
+
+#Category: Tweaks (Built-in Overall AI Improvements.)
+[TWEAKS]
+	#(Default: true)
+	#Resets an AI latex's target right after applying the Pacified effect. Does not work for armed latexes.
+	PacifiedLatexesPleaseCalm = true
+
+#Category: Hero of the Village | Gamerule
+["HERO OF THE VILLAGE"]
+	#(Default: -15)
+	#Adjusts the initial amount of latex players' village reputation.
+	villageheroInitialValue = -15.0
+	#(Default: -15)
+	#Adjusts the minimum amount of latex players' village reputation.
+	villageheroMinValue = -15.0
+	#(Default: 20)
+	#Adjusts the maximum amount of latex players' village reputation.
+	villageheroMaxValue = 20.0
+	#(Default: -4)
+	#Latex players whose reputation is below this value will no longer able to have the Pacified effect.
+	villageheroHostileValue = -4.0
+	#(Default: 0)
+	#Latex players whose reputation isn't below this value will always have the Pacified effect.
+	villageheroNeutralValue = 0.0
+	#(Default: 15)
+	#Latex players whose reputation isn't below this value will grant discounts while trading with villagers.
+	villageheroAcceptanceValue = 15.0
+	#(Default: 0.1)
+	#Increases a latex player's reputation when they killed an [Illager].
+	villageheroIllagerKill = 0.1
+	#(Default: 0.07)
+	#Increases a latex player's reputation when they killed an [Latex].
+	villageheroLatexKill = 0.07
+	#(Default: 0.05)
+	#Increases a latex player's reputation when they killed an [Zombie].
+	villageheroZombieKill = 0.05
+	#(Default: 1 | 0→Disable, 1→Enable, -1→Low Reputation Only, 2→High Reputation Only)
+	#Should the villagers increase/decrease the price when trading with low/high-reputation latex players?
+	villageheroTradeAffection = 1
+	#(Default: 0.5 | 2.5 → 250%. Minimum: 0)
+	#Multiplies the reduction of a latex player's reputation when they hurt villagers. The reduced amount is equal to the damage number.
+	villageheroBetrayalMultiplier = 0.5
+	#(Default: 0.06 | 0.06 → 6%. Minimum: 0)
+	#Iron golems are considered villagers whether they are built by a player. The reputation reduction can be multiplied further.
+	villageheroGolemsAreVillagers = 0.06
+

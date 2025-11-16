@@ -1,0 +1,35 @@
+
+[MusicPlayer]
+	#allow the music player to play boss themes
+	"Music Player" = true
+
+["Custom Hair Color"]
+	#Set The Custom Hair Color For the Female Sneps [BioSynth and Exp2]
+	"Females Sneps Custom Hair Color" = false
+	#Set The Custom Hair Color For the Male Sneps [BioSynth and Exp2]
+	"Males Sneps Custom Hair Color" = false
+
+[Overlays]
+	#Set the Pat Overlay On or Off
+	"Pat Overlay" = true
+	#Set the X pos of the pat overlay.  
+	#[Default 12]
+	"Pat Overlay X pos" = 12.0
+	#Set the Y pos of the pat overlay.  
+	#[Default 72]
+	"Pat Overlay Y pos" = 72.0
+	#Display How much Ticks You have Hold the Wing Flap Ability
+	"Wing Flap Ability Ticks Info" = false
+	#Make the pat overlay use a paw icon instead of text
+	"Paw Style Pat Overlay" = true
+
+["Extra Animations"]
+	#allow the show of the extra hand in some contexts like fall fly
+	"Show Extra Hand" = false
+	#Make the Laser Moviment be smooth, it may cause the particule to be slower
+	"Laser Smooth Moviment" = false
+
+[ModelsHandle]
+	#Turn off the Plantoids [Female Chest Features]
+	"Turn Off the Plantoids" = false
+
