@@ -1,0 +1,10 @@
+enablevillagertrades = true
+#Range: 0.01 ~ 1.0
+shader_fade_speed = 0.05
+enableshaders = true
+#Range: 0.1 ~ 2.0
+shaderintensitymultiplier = 1.0
+enableparanoia = true
+enablecamerawobble = true
+enablechemtooltips = true
+
